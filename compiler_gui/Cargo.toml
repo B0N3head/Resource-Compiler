@@ -1,0 +1,23 @@
+[package]
+name = "compiler_gui"
+version = "0.1.0"
+edition = "2024"
+
+# This specifies that the application will be a GUI app with no console window
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
+
+[dependencies]
+eframe = "0.22"
+egui = "0.22"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rfd = "0.12"
+flate2 = "1.0"       # For resource compression
+chrono = "0.4"       # For timestamps
+egui_extras = "0.22" # For additional UI widgets
+image = { version = "0.24", features = ["ico"] } # For loading the app icon
+
+[dependencies.winapi]
+version = "0.3.9"
+features = ["winuser", "windef"]
