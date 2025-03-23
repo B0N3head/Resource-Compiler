@@ -90,3 +90,5 @@ resource_compiler/
 ├── main_gui.exe           # Compiled GUI application
 └── stub.exe               # Compiled stub executable
 ```
+
+###### This was made as a test/first rust project... rust is awesome 🦀
